@@ -8,3 +8,8 @@
         name: openjdk-17
         state: present
         update_cache: yes
+    - name : start nginx
+      service:
+        name: nginx:1.25
+        state: started
+
